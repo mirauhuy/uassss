@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wayang Windu - Wisata Bandung</title>
+    <link rel="stylsheet" href="style.CSS">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* Header Styles */
+        .hero {
+            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/api/placeholder/1200/200');
+            height: 700px;
+            background-position: center;
+            background-size: cover;
+            color: pink;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .hero h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            max-width: 600px;
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #1a5f7a;
+            padding: 1em;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            gap: 2em;
+            list-style: none;
+        }
+
+        nav a {
+            color: White;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.5em 1em;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: pink;
+        }
+
+        /* Main Content */
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2em;
+        }
+
+        .section {
+            margin-bottom: 4em;
+        }
+
+        .section h2 {
+            color: #1a5f7a;
+            margin-bottom: 1em;
+            font-size: 2em;
+            text-align: center;
+        }
+
+        /* Info Cards */
+        .info-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2em;
+        }
+
+        .info-card {
+            background-color: pink;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .info-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .info-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 1.5em;
+        }
+
+        .card-content h3 {
+            color: #1a5f7a;
+            margin-bottom: 0.5em;
+        }
+
+        .card-content p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Facilities Section */
+        .facilities {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1em;
+            text-align: center;
+        }
+
+        .facility {
+            padding: 1em;
+            background-color: pink;
+            border-radius: 8px;
+        }
+
+        /* Contact Section */
+        .contact-info {
+            background-color: lavender;
+            padding: 2em;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .contact-info p {
+            margin: 1em 0;
+        }
+
+        /* Footer */
+        footer {
+            background-color: grey;
+            color: white;
+            text-align: center;
+            padding: 2em;
+            margin-top: 3em;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 800px) {
+            .hero h1 {
+                font-size: 2.5em;
+            }
+
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .info-cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+    <img src="wisata.png" width = 1000px>
+        
+        </div>
+
+    <nav>
+        <ul>
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#tentang">Tentang</a></li>
+            <li><a href="#fasilitas">Fasilitas</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="tentang" class="section">
+            <h2>Tentang Wayang Windu</h2>
+            <div class="info-cards">
+                <article class="info-card">
+                    <img src="pltpwayangwindu.jpg">
+                    <div class="card-content">
+                        <h3>Pembangkit Listrik Geothermal</h3>
+                        <p>Wayang Windu merupakan pembangkit listrik tenaga panas bumi terbesar di Indonesia yang menghasilkan energi ramah lingkungan.PLTP (Pembangkit Listrik Tenaga Panas Bumi) Wayang Windu terletak di daerah Bandung Pangalengan, Jawa Barat, karena wilayah ini memiliki potensi geotermal yang sangat besar. Indonesia, termasuk wilayah Bandung Pangalengan, berada di Cincin Api Pasifik yang dikenal sebagai daerah dengan aktivitas geotermal tinggi. Di daerah ini terdapat sumber panas bumi yang berasal dari aktivitas vulkanik bawah permukaan, yang menghasilkan uap panas yang dapat dimanfaatkan sebagai sumber energi. </p>
+                    </div>
+                </article>
+
+                <article class="info-card">
+                    <img src="atv.jpg">
+                    <div class="card-content">
+                        <h3>Permainan</h3>
+                        <p>Tersedia ATV, Flying fox untuk anak-anak maupun dewasa. selain itu, kamunjuga bisa membeli paket fun yang tersedia. Anda bisa menikmati pemandangan yang sejuk dan indah menggunakan Atv. </p>
+                    </div>
+                </article>
+
+                <article class="info-card">
+                    <img src="wahana.jpg">
+                    <div class="card-content">
+                        <h3>Pemandangan Alam</h3>
+                        <p> Kawasan Wayang Windu di Pangalengan, Bandung menawarkan pemandangan alam yang memukau khas pegunungan Jawa Barat. Kawasan ini dikelilingi oleh perbukitan hijau yang membentang luas dengan latar belakang Gunung Wayang dan Gunung Windu yang menjulang tinggi. Hamparan kebun teh yang hijau membentang sejauh mata memandang, diselingi dengan perkebunan kopi dan tanaman sayuran yang dikelola oleh penduduk setempat.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="fasilitas" class="section">
+            <h2>Fasilitas</h2>
+            <div class="facilities">
+                <div class="facility">
+                    <h3>Pusat Informasi</h3>
+                    <p>Informasi lengkap tentang geothermal</p>
+                </div>
+                <div class="facility">
+                    <h3>Area Parkir</h3>
+                    <p>Parkir luas dan aman</p>
+                </div>
+                <div class="facility">
+                    <h3>Toilet</h3>
+                    <p>Fasilitas toilet bersih</p>
+                </div>
+                <div class="facility">
+                    <h3>Musholla</h3>
+                    <p>Tempat ibadah nyaman dan bersih</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="kontak" class="section">
+            <h2>Informasi Kontak</h2>
+            <div class="contact-info">
+                <p>📍 Desa Margamukti, Kecamatan Pangalengan, Kabupaten Bandung</p>
+                <p>📱 +62-856-9164-5045</p>
+                <p>⏰ Buka: Senin - Minggu (08.00 - 16.00 WIB)</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Wayang Windu - Wisata Bandung.</p>
+    </footer>
+</body>
+</html>
